@@ -1,0 +1,85 @@
+{
+  "pages": [
+	  {
+	    "path": "pages/home/home",
+	    "style": {
+	      "navigationBarTitleText": "",
+	      "enablePullDownRefresh": false,
+	  	"navigationStyle": "custom"
+	    }
+	  },
+    {
+      "path": "pages/hot/hot",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/msg/msg",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+	{
+	  "path": "pages/center/center",
+	  "style": {
+	    "navigationBarTitleText": "",
+	    "enablePullDownRefresh": false
+	  }
+	}
+  ],
+  "subPackages": [
+  	{
+  		"root": "subCom-pkg",
+		"pages": [
+		{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "搜索",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+  	}
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#efeff4"
+    }
+  },
+  "tabBar": {
+	  "color": "#999",
+	  "backgroundColor": "#fafafa",
+	  "selectedColor": "#02d199",
+	  "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home"
+      },
+      {
+        "text": "消息",
+        "pagePath": "pages/msg/msg"
+      },
+      {
+        "text": "热门",
+        "pagePath": "pages/hot/hot"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/center/center"
+      }
+    ]
+  },
+  "easycom": {
+  		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+  	}
+}

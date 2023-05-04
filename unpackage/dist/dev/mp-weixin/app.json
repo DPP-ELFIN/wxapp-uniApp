@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/hot/hot",
+    "pages/msg/msg",
+    "pages/center/center"
+  ],
+  "subPackages": [
+    {
+      "root": "subCom-pkg",
+      "pages": [
+        "search/search"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#02d199",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home"
+      },
+      {
+        "text": "消息",
+        "pagePath": "pages/msg/msg"
+      },
+      {
+        "text": "热门",
+        "pagePath": "pages/hot/hot"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/center/center"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
